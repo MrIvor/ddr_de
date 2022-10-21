@@ -1,0 +1,10 @@
+cfgtag:=latest
+work_home:=/home/dd/test_tmp
+proj_home:=/home/dd/test_tmp/frigo
+sysnc_tb.log:=/home/dd/test_tmp/make_workspace.log
+BT_IT_ST_HOME:=/home/dd/test_tmp/frigo/frigo_dv/st
+IS_BT_IT_ST:=st
+cd /home/dd/test_tmp/frigo/frigo_dv/st/sim/cfg && git tag >> /home/dd/test_tmp/frigo/frigo_dv/st/sim/cfg/git_cmd.log 2>&1
+cd /home/dd/test_tmp/frigo/frigo_dv/st/sim/cfg/ && git pull
+ip_info_tags info =:{'ddr': {'branch': 'main', 'tag': 'latest', 'design': 'latest', 'verify': 'latest'}, 'usb': {'branch': 'main', 'tag': 'latest', 'design': 'latest', 'verify': 'latest'}}
+/home/dd/test_tmp/frigo/frigo_dv/st/sim/cfg/cfg_tag.json format is not correct
